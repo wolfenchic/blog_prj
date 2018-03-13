@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: 'Roboto Mono', monospace;
     padding-top: 50px;
 }
 
@@ -21,4 +21,10 @@ footer {
 
 h1{
     color: #AE8EC0;
+}
+
+.navbar {
+    background-image: none;
+    background-color:  #AE8EC0;
+    border-bottom-color: #AE8EC0;
 }
