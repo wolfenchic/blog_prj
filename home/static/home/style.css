@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto Mono', monospace;
     padding-top: 50px;
+    background-color: #fff8f9
 }
 
 footer {
@@ -27,4 +28,8 @@ h1{
     background-image: none;
     background-color:  #AE8EC0;
     border-bottom-color: #AE8EC0;
+}
+
+h3 {
+    color: #c5eee8;
 }
