@@ -25,7 +25,7 @@ SECRET_KEY = '4e&w9how=vy6k_gts07=5#i!5kj4)ab@oddrytchpt=k%_keba'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["blog-app-wolfenchic.c9users.io", "wolfenchic-blog.herokuapp.com"]
 
 
 # Application definition
