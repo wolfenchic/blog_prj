@@ -13,7 +13,15 @@ def post_detail(request, id):
     return render(request, "blog/post_detail.html", {'post': post})
     
 def create_post(request):
-    form = PostForm()
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        post = form.save(commit=False)
+        post.author = request.user
+        post.save()
+        return redirect('blog_posts')
+    else:
+        form = PostForm()
+    
     return render(request, 'blog/create_post.html', {'form': form})
   
 # def create_blog_post(request):
