@@ -1,8 +1,9 @@
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Josefin Slab', serif;
     padding-top: 50px;
     background-color: #fff8f9
 }
+
 
 footer {
     margin-top: 40px;
@@ -28,8 +29,13 @@ h1{
     background-image: none;
     background-color:  #AE8EC0;
     border-bottom-color: #AE8EC0;
+    font-size: 2rem;
 }
 
 h3 {
-    color: #c5eee8;
+    color: #438496;
+}
+
+p {
+    font-size: 2rem;
 }
