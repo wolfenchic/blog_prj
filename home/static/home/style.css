@@ -39,3 +39,9 @@ h3 {
 p {
     font-size: 2rem;
 }
+
+.alert {
+    background-color: #FEDFF5;
+    color: white;
+    font-size: 1.5rem;
+}
