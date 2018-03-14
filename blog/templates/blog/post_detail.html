@@ -4,4 +4,6 @@
     <h1>{{ post.title }}</h1>
     <p>{{ post.content }}</p>
     <button class="btn btn-default" onclick="location.href='{% url 'blog_posts' %}'">Back To Blog</button>
+    <button class="btn btn-default" onclick="location.href='{% url 'edit_post' post.id %}'">Edit Post</button>
 {% endblock content %}
+
