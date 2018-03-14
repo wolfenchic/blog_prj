@@ -1,5 +1,5 @@
 body {
-    font-family: 'Josefin Slab', serif;
+    font-family: 'Work Sans', sans-serif;
     padding-top: 50px;
     background-color: #fff8f9
 }
@@ -47,14 +47,22 @@ p {
     text-align: center;
 }
 
-button {
-    background-color: #6EC1C8
-}
-
 .navbar-brand {
     font-size: 3rem;
 }
 
 .postPublishDate {
     font-size: 1.5rem;
+}
+
+.btn-default {
+    font-size: 2rem;
+}
+
+.card {
+    padding: 20px 20px 20px 20px;
+    padding-bottom: 40px;
+    background-color: white;
+    opacity: .6;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 1.0), 0 6px 60px 0 rgba(0, 0, 0, 0.50);
 }
