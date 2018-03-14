@@ -51,18 +51,23 @@ p {
     font-size: 3rem;
 }
 
-.postPublishDate {
-    font-size: 1.5rem;
+.cardText {
+    font-size: 1.8rem;
+}
+
+.cardPostPublish {
+    font-size: 1.4rem;
 }
 
 .btn-default {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    background: #6EC1C8;
 }
 
 .card {
     padding: 20px 20px 20px 20px;
     padding-bottom: 40px;
     background-color: white;
-    opacity: .6;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 1.0), 0 6px 60px 0 rgba(0, 0, 0, 0.50);
 }
+
