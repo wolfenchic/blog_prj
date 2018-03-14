@@ -33,7 +33,7 @@ h1{
 }
 
 h3 {
-    color: #438496;
+    color: #6EC1C8;
 }
 
 p {
@@ -41,7 +41,20 @@ p {
 }
 
 .alert {
-    background-color: #CC99FF;
+    background-color: #6EC1C8;
     color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+button {
+    background-color: #6EC1C8
+}
+
+.navbar-brand {
+    font-size: 3rem;
+}
+
+.postPublishDate {
     font-size: 1.5rem;
 }
