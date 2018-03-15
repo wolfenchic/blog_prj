@@ -8,19 +8,13 @@
     <br>
     {% for post in posts %}
     <div class="container-fluid">
-        <div class="row">
+        <div class="row cardRow">
         <div class="col-lg-4 col-sm-4 col-xs-10 text-center">
-            <div class="card">
-                    <!--<a href="https://placeholder.com"><img class="img-responsive" src="http://via.placeholder.com/300x150"></a>-->
-                    <img class="previewImage" src="{{ MEDIA_URL }}{{post.image}}"/>
-                    <h3>{{ post.title }}</h3>
-                        <p class="cardText">{{ post.content|truncatewords:20 }}</p>
-                        <a class="story-img" href="#">
-                        <img src="http://via.placeholder.com/100x100" style="width:70px; height: 70px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
-                        </a>
-                        <br>
+            <div class="card" style="background-image:url({{ MEDIA_URL }}{{post.image}})">
+                    <h3 class="cardTitle">{{ post.title }}</h3>
                         <br>
                         <p><button class="btn btn-default" onclick="location.href='{% url 'post_detail' post.id %}'">Read More</button></p>
+                        <br>
                         <p class="cardPostPublish">{{ post.published_date }} | <strong>Views</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}</p>
                     </div>
                     <br>

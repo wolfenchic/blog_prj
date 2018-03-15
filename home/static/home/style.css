@@ -57,6 +57,7 @@ p {
 
 .cardPostPublish {
     font-size: 1.4rem;
+    color: white;
 }
 
 .btn-default {
@@ -65,14 +66,35 @@ p {
 }
 
 .card {
-    padding: 20px 20px 20px 20px;
+    padding: 20px 10px 20px 10px;
     padding-bottom: 40px;
-    background-color: white;
-     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 1.0), 0 6px 60px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 1.0), 0 6px 60px 0 rgba(0, 0, 0, 0.50);
 }
 
 .previewImage {
-    width: 300px;
+    width: 350px;
     height: 200px;
-    
+}
+
+.cardTitle{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    vertical-align: middle;
+}
+
+.articleContainer {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.articleContent {
+    padding: 20px 20px 20px 20px;
+    font-size: 1.5rem;
+}
+
+.articleHeading {
+    padding: 20px 20px 10px 20px;
 }

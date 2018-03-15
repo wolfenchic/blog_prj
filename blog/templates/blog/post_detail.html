@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="articleContainer">
     <img src="{{ MEDIA_URL }}{{post.image}}"/>
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.content }}</p>
+    <h1 class="articleHeading">{{ post.title }}</h1>
+    <p class="articleContent">{{ post.content|linebreaksbr }}</p>
+    <a class="story-img" href="#">
+                        <img src="http://via.placeholder.com/100x100" style="width:70px; height: 70px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
+                        </a>
+    </div>
     <button class="btn btn-default" onclick="location.href='{% url 'blog_posts' %}'">Back To Blog</button>
     <button class="btn btn-default" onclick="location.href='{% url 'edit_post' post.id %}'">Edit Post</button>
 {% endblock content %}
-
+ 
