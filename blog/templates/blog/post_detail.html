@@ -1,14 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="articleContainer">
-    <img src="{{ MEDIA_URL }}{{post.image}}"/>
+ <div class="container-fluid">
+        <div class="row articleRow">
+        <div class="col-lg-12 col-sm-4 col-xs-10 text-left">
+    <div class="card" style="background-image:url({{ MEDIA_URL }}{{post.image}})" class="img-responsive">
+    </div>
     <h1 class="articleHeading">{{ post.title }}</h1>
     <p class="articleContent">{{ post.content|linebreaksbr }}</p>
     <a class="story-img" href="#">
                         <img src="http://via.placeholder.com/100x100" style="width:70px; height: 70px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
-                        </a>
+    </a>
     </div>
+    </div>                    
+    </div>
+    
     <button class="btn btn-default" onclick="location.href='{% url 'blog_posts' %}'">Back To Blog</button>
     <button class="btn btn-default" onclick="location.href='{% url 'edit_post' post.id %}'">Edit Post</button>
 {% endblock content %}

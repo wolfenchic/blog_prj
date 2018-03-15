@@ -134,3 +134,8 @@ MESSAGE_STORAGE='django.contrib.messages.storage.session.SessionStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'media'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailAuth'
+]
