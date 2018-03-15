@@ -2,22 +2,58 @@
 {% load gravatar %}
 
 {% block content %}
- <div class="articleContainer">
-    <img class="articleImage" src="{{ MEDIA_URL }}{{post.image}}" style="width:100%; height:10%;"/>
-    <h1 class="articleHeading">{{ post.title }}</h1>
-    <p class="articleContent">{{ post.content|linebreaksbr }}</p>
+
+ <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-10">
+
+          <!-- Title -->
+          <h1 class="mt-4">Post Title</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#">Start Bootstrap</a>
+          </p>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Posted on January 1, 2018 at 12:00 PM</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="{{ MEDIA_URL }}{{post.image}}">
+
+          <hr>
+
+          <!-- Post Content -->
+         <p class="articleContent">{{ post.content|linebreaksbr }}</p>
+
+<!-- <div class="articleContainer">-->
+<!--    <div class="card">-->
+<!--<div class="row articleRow" style="background-image:url({{ MEDIA_URL }}{{post.image}})"</div>-->
+<!--    <img class="articleImage" src="{{ MEDIA_URL }}{{post.image}}" class="img-responsive" style="width:50%; height:400px;"/>-->
     
-    <p class="articleContent"> 
-    <a class="story-img" href="#">
-    <img src="{% gravatar_url post.author.email %}" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">
-    </a>
-    This article was written by {{ post.author }}
-    </p>
-    </div>                  
+<!--    <h1 class="articleHeading">{{ post.title }}</h1>-->
+<!--    <p class="articleContent">{{ post.content|linebreaksbr }}</p>-->
+<!--    <p class="articleContent">-->
+<!--    <a class="story-img" href="#">-->
+<!--    <img src="{% gravatar_url post.author.email %}" style="width:100px; height: 100px; background-color: #12ABB2; color: #ffffff;" class="img-circle">-->
+<!--    </a>-->
+<!--    This article was written by {{ post.author }}-->
+<!--    </p>-->
+<!--    </div>-->
+<!--    </div>                  -->
     
-    <div class="articleButtonDiv" style="text-align:center;">
-    <button class="btn btn-default btn-lg articleButton" onclick="location.href='{% url 'blog_posts' %}'">Back To Blog</button>
-    <button class="btn btn-default btn-lg articleButton" onclick="location.href='{% url 'edit_post' post.id %}'">Edit Post</button>
-    </div>
+<!--    <div class="articleButtonDiv" style="text-align:center;">-->
+<!--    <button class="btn btn-default btn-lg articleButton" onclick="location.href='{% url 'blog_posts' %}'">Back To Blog</button>-->
+<!--    <button class="btn btn-default btn-lg articleButton" onclick="location.href='{% url 'edit_post' post.id %}'">Edit Post</button>-->
+<!--    </div>-->
 {% endblock content %}
  

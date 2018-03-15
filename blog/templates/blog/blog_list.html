@@ -14,7 +14,7 @@
             <div class="card" style="background-image:url({{ MEDIA_URL }}{{post.image}})">
                     <h3 class="cardTitle">{{ post.title }}</h3>
                         <br>
-                        <p><button class="btn btn-default" onclick="location.href='{% url 'post_detail' post.id %}'">Read More</button></p>
+                        <p><button class="btn btn-default postButton" onclick="location.href='{% url 'post_detail' post.id %}'">Read More</button></p>
                         <br>
                         <p class="cardPostPublish">{{ post.published_date }} | <strong>Views</strong> {{ post.views }} | <strong>Tag</strong> {{ post.tag }}</p>
                     </div>
