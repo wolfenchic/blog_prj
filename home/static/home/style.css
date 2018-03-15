@@ -14,7 +14,7 @@ footer {
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .icon-bar {
@@ -91,13 +91,6 @@ p {
     padding-top: 20px;
 }
 
-
-.articleContent {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px 20px 20px 20px;
-    font-size: 2rem;
-}
 
 
 .articleButtonDiv {
