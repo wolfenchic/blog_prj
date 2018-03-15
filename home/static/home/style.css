@@ -84,14 +84,12 @@ p {
 }
 
 .articleContainer {
+    background-color: white;
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 20px;
 }
 
-.articleRow {
-    background-color: white;
-}
 
 .articleContent {
     padding: 20px 20px 20px 20px;
@@ -100,4 +98,19 @@ p {
 
 .articleHeading {
     padding: 20px 20px 10px 20px;
+}
+
+
+.articleImage {
+    width: 900px;
+    height: 600px;
+}
+
+.articleButtonDiv {
+    padding-top: 20px;
+}
+
+.articleButton {
+    padding: 20px 20px 20px 20px;
+    color: white;
 }
