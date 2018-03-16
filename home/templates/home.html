@@ -1,5 +1,129 @@
- {% extends "base.html" %}
+{% extends "base.html" %}
+{% load staticfiles %}
 
 {% block content %}
-   <h1 class="BlogHomepage">Homepage</h1> 
+<section id="landingImage" class="bg-dark">
+    <div class="container-fluid">
+    <div class="row max-viewport align-items-center">
+    <div class="col-12">
+    <div class="row">
+    <img class="img-responsive banner"  href="{% static 'home/images/landingFinal.jpeg' %}"></img>
+    <article class="landing">
+        <p class="landingText">Hi, I'm Nichola.<!--I do websites.I do user engagement strategy.I do analytics and insights.--></p>
+        </article>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br>
+<section id="aboutMe">
+<div class="container-fluid">
+    <div class="row headingSection">
+    <div class="col-12">
+    <h1 class="sectionHeading subHead">About me</h1>
+    <hr>
+
+
+<div class="row">
+<div class="col-xs-10 col-sm-8 col-lg-8">
+    <p class="aboutMeText"><br>My name is Nichola and I'm a full stack developer.<br>I specialise in building beautiful, usable, professional websites.<br><br>I've worked in digital media with some of the biggest brands in the business for the past 10 years, focusing on user engagement, brand idendity and advertising.<br><br> I'm passionate about crisp, clean design and seamless user experience.<br> I create spaces that users enjoy coming back to again and again.  </p>
+    </div>
+    
+    
+    
+    <div class="col-lg-4 col-sm-4 col-xs-10">
+    <div class="imageContainer">
+    <img class="img-responsive aboutImage" src="./images/meAbstract1.png"></img>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+</section>
+
+<!--=========================================skills================-->
+
+
+<section id="skills" class="bg-dark">
+ <div class="container-fluid skillSkill">
+    <div class="row headingSection">
+    <div class="col-12">
+    <h1 class="skillssectionHeading subHead">What I specialise in</h1>
+    <hr>
+    <div class="container-fluid forRow">
+    <div class="row">
+    <div class="col-lg-4 col-sm-4 col-xs-10 text-center mb-3"> 
+        <div class="card">
+            <i class="fa fa-paint-brush fa-5x icon" aria-hidden="true"></i>
+                <h3 class="card-title">Web Design</h3>
+                <p class="card-text"><br>Beautiful and user-focused design is a top priority. Create memorable online experiences for your customers.</p>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-4 col-xs-10 text-center mb-3">    
+        <div class="card">
+             <i class="fa fa-users fa-5x icon" aria-hidden="true"></i>
+             <h3 class="card-title">User Engagement</h3>
+                <p class="card-text"><br>You've spent time and money attracting users to your site. Now that they're here how do you increase their lifetime value?</p>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-4 col-xs-10 text-center mb-3">    
+        <div class="card">
+             <i class="fa fa-line-chart fa-5x icon" aria-hidden="true"></i>
+                <h3 class="card-title">Analytics and Insights </h3>
+                <p class="card-text"><br>Use data to build meaningful insights which inform your business decision-making. Use data to max your ROI.</p>
+            </div>
+        </div>
+ 
+ </div>           
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+<br><br>
+<section id="portfolio">
+<div class="container-fluid">
+    <div class="row headingSection">
+    <div class="col-12">
+    <h1 class="sectionHeading subHead">My portfolio and inspiration</h1>
+    <hr>
+
+<div id="resumeSection">
+<div class="row">
+<div class="col-xs-10 col-sm-8 col-lg-8">
+    <h2>Resume</h2>
+     <p class="portfolioText"><br>If you're interested in collaborating or would like to discuss an opportunity with me you may be interested in taking a look at my resume.</p>
+     <a href="myCv.pdf"><button type="View My Resume" class="btn btn-primary resumeButton">View My Resume</button></a>
+    </div>
+    </div>
+</div>
+    <hr>
+
+
+<div class="row">
+<div class="col-xs-10 col-sm-8 col-lg-8">
+    <h2>Inspiration</h2>
+    <p class="portfolioText"><br>While developing this site I searched high and low for the right images.<br> Eventually I came across a really talented artist called Scott Webb.<br> I've used his images throughout the site.</p>
+    </div>
+    
+    <div class="col-lg-4 col-sm-4 col-xs-10">
+    <div class="imageContainer">
+    <a href="https://www.pexels.com/u/scottwebb/">
+    <div class="portfolioImageText"><h3>Scott Webb</h3><p>Click to view</p></div>
+    <img class="img-responsive portfolioImage" src="./images/ScottWebb.jpeg"></img>
+    </a>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
