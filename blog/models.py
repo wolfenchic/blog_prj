@@ -21,6 +21,9 @@ class Post(models.Model):
     def publish(self):
         self.published_date = timezone.now()
         self.save()
+        
+    def can_be_edited_by(self, user):
+        return user.is_staff or user == self.author
 
     def __str__(self):
         return self.title
