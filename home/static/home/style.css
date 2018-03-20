@@ -119,3 +119,22 @@ p {
     margin: auto;
     width: 50%;
 }
+
+#landingImage {
+position:relative;
+text-align: center;
+color: white;
+margin-top: 0px;
+
+}
+
+.landingText {
+    position: absolute;
+    margin: auto;
+    top: 20%; left: 0; bottom: 0; right: 0;
+	font-family: 'Karla', sans-serif;
+	border-right: .1em solid white;
+	/*top: 20%;
+    left: 10%;*/
+    font-size: 5rem;
+}
